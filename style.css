@@ -5,14 +5,13 @@
 }
 
 .navbar {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
   background-color: orangered;
   height: 6rem;
   display: flex;
-  justify-content: left;
+
   align-items: center;
   padding: 10px;
   z-index: 1;
@@ -32,13 +31,12 @@
 .container {
   margin-top: 20px;
   width: 100%;
-  height: fit-content;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 5px;
   row-gap: 20px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  margin-right: 10px;
 }
 .item1:hover {
   transform: scale(1.1);
@@ -49,8 +47,6 @@
 
 .item1 {
   margin-top: 10px;
-  align-self: center;
-  justify-self: center;
   width: 16.5rem;
   height: 22rem;
   background-color: #fff;

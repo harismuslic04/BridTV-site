@@ -41,7 +41,7 @@ async function getData() {
 
   data.Video.forEach((svaki, index) => {
     links[index].addEventListener("click", function (e) {
-      let broj = 0;
+      // let broj = 0;
       // e.preventDefault();
       if (Array.from(cardContainer.children).length > 25) {
         const videoPusteni = cardContainer.lastChild;
@@ -51,7 +51,7 @@ async function getData() {
       let naslov = document.createElement("h2");
       naslov.textContent = svaki.name;
       naslov.style.gridRowStart = "1";
-      naslov.style.justifySelf = "Center";
+      naslov.style.justifySelf = "center";
       naslov.style.fontFamily = "sans-serif";
       console.log(naslov);
       let novidiv = document.createElement("div");
@@ -71,13 +71,13 @@ async function getData() {
       novidiv.style.display = "grid";
       novidiv.style.justifyContent = "center";
 
-      novidiv.style.gridColumnEnd = "1";
-      novidiv.style.gridColumnStart = "6";
-      cardContainer.append(novidiv);
+      novidiv.style.gridColumnEnd = "6";
+      novidiv.style.gridColumnStart = "1";
       novidiv.append(naslov);
+      cardContainer.append(novidiv);
 
       window.scrollTo({
-        left: 0,
+        // left: 0,
         top: 0,
         behavior: "smooth",
       });
